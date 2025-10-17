@@ -54,8 +54,8 @@ interests:
   - AI Ethics
 
 education:
-  - area: PhD Computer Science (AI Focus)
-    institution: Stanford University
+  - area: PhD Bioinformatics
+    institution: The University of Hong Kong
     date_start: 2015-09-01
     date_end: 2019-06-30
     summary: |
@@ -63,16 +63,16 @@ education:
     button:
       text: 'Read Thesis'
       url: 'https://example.com/thesis.pdf'
-  - area: MS Computer Science
-    institution: Carnegie Mellon University
+  - area: MS Biological and Pharmaceutical Engineering
+    institution: University of Chinese Academy of Sciences
     date_start: 2013-09-01
     date_end: 2015-05-31
     summary: |
       GPA: 4.0/4.0
 
       Specialized in machine learning and robotics.
-  - area: BS Computer Science
-    institution: MIT
+  - area: BS Bioinformatics
+    institution: XUZHOU MEDICAL UNIVERSITY
     date_start: 2009-09-01
     date_end: 2013-05-31
     summary: |

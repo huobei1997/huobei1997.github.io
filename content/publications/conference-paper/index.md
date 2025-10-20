@@ -1,5 +1,5 @@
 ---
-title: 'An example conference paper'
+title: 'Multi-omics sequencing of gastroesophageal junction adenocarcinoma reveals prognosis-relevant key factors and a novel immunogenomic classification'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -8,7 +8,7 @@ authors:
   - admin
   - Robert Ford
 
-date: '2013-07-01T00:00:00Z'
+date: '2025-01-30T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -34,6 +34,10 @@ featured: true
 hugoblox:
   ids:
     doi: 10.5555/123456
+        
+        
+        
+        
 
 # Custom links
 links:

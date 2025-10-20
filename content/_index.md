@@ -31,21 +31,6 @@ sections:
         shape: circle # Options: circle (default), square, rounded
  
   
-  - block: collection
-    id: publications # 建议加上 id 方便导航
-    content:
-      # 1. 修改标题
-      title: Publications
-      text: ''
-      filters:
-        folders:
-          - publications
-        # 2. 确保这里不过滤任何文章
-        featured_only: false
-        exclude_featured: false
-    design:
-      # 3. 这里决定了显示样式，citation就是列表样式
-      view: citation
   - block: cta-card
     demo: true # Only display this section in the Hugo Blox Builder demo site
     content:

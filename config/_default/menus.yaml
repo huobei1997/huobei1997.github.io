@@ -12,4 +12,4 @@ main:
     weight: 11
   - name: Blog
     url: blog/
-    weight: 12
+    weight: 30

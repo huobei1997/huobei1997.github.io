@@ -81,6 +81,6 @@ education:
 
 My name is **Mengting LI**, and I am a Bioinformatics PhD student at the School of Public Health, The University of Hong Kong (HKU), supervised by **Prof. Leo Poon**.
 
-My research involves analyzing viral genomic data to understand viral evolution, transmission dynamics, and virus-host interactions. Through my work, I aim to provide novel insights into virology.
+My research involves analyzing viral genomic data to understand viral evolution, transmission dynamics, and virus-host interactions. Through my work, I aim to provide novel insights into **virology**.
 
 Here, I'll be sharing my **learning notes, research reflections, and technical tutorials**. I look forward to connecting with you.

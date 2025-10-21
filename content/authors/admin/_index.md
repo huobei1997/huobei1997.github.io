@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Welcome to my blog!
+title: Mengting LI
 
 # Name pronunciation (optional)
 name_pronunciation: ''

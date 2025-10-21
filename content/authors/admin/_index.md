@@ -39,7 +39,7 @@ profiles:
   - icon: brands/github
     url: https://github.com/huobei1997
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/limengting/
+    url: https://www.linkedin.com/in/huobei/
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?user=limengting
 

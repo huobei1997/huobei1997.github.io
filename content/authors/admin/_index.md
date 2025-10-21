@@ -53,8 +53,8 @@ interests:
   - Large Language Models
 
 education:
-  - area: PhD Bioinformatics
-    institution: The University of Hong Kong
+  - area: PhD in Bioinformatics
+    institution: The University of Hong Kong (HKU)
     date_start: 2015-09-01
     date_end: 2019-06-30
     summary: |
@@ -62,16 +62,16 @@ education:
     button:
       text: 'Read Thesis'
       url: 'https://example.com/thesis.pdf'
-  - area: MS Biological and Pharmaceutical Engineering
-    institution: University of Chinese Academy of Sciences
+  - area: Master of Biological and Pharmaceutical Engineering
+    institution: University of Chinese Academy of Sciences (UCAS)
     date_start: 2013-09-01
     date_end: 2015-05-31
     summary: |
       GPA: 4.0/4.0
 
       Specialized in machine learning and robotics.
-  - area: BS Bioinformatics
-    institution: XUZHOU MEDICAL UNIVERSITY
+  - area: Bachelor of Bioinformatics
+    institution: XUZHOU MEDICAL UNIVERSITY (XZMU)
     date_start: 2009-09-01
     date_end: 2013-05-31
     summary: |
@@ -83,9 +83,7 @@ education:
 
 ---
 
-Welcome to my blog.
-
-My name is **Mengting LI**, and I am a Bioinformatics PhD student at the School of Public Health, The University of Hong Kong (HKU), supervised by Prof. Leo Poon.
+My name is **Mengting LI**, and I am a Bioinformatics PhD student at the School of Public Health, The University of Hong Kong (HKU), supervised by **Prof. Leo Poon**.
 
 My research involves analyzing viral genomic data to understand viral evolution, transmission dynamics, and virus-host interactions. Through my work, I aim to provide novel insights into virology.
 

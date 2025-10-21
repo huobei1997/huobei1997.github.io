@@ -35,7 +35,7 @@ header:
     show_search: true
     show_theme_chooser: true
     logo:
-      text: 'Welcome to my blog!📖'
+      text: 'Welcome to my blog! 📖'
 
 # Site footer
 footer:

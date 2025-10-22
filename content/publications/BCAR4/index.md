@@ -48,7 +48,7 @@ links:
   - type: pdf
     url: "paper.pdf"
   - type: source
-    url: https://www.biorxiv.org/content/10.1101/2025.02.06.636885v1.article-info
+    url: https://www.biorxiv.org/content/10.1101/2025.02.06.636885v1
         
         
         

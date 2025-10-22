@@ -1,4 +1,5 @@
 ---
+
 title: 'Multi-omics sequencing of gastroesophageal junction adenocarcinoma reveals prognosis-relevant key factors and a novel immunogenomic classification'
 
 # Authors
@@ -34,7 +35,7 @@ date: '2025-01-30T00:00:00Z'
 publication: In *Gastric Cancer*
 #publication_short: In *ICW*
 
-abstract: 
+abstract: |
 
 **Background** Gastroesophageal junction adenocarcinoma (GEJAC) exhibits distinct molecular characteristics due to its unique anatomical location. We sought to investigate effective and reliable molecular classification of GEJAC to guide personalized treatment.
 

@@ -28,9 +28,9 @@ abstract: The gene chip data set with access number GSE41439 in NCBI gene expres
 featured: true
 
 # Standard identifiers for auto-linking
-hugoblox:
-  ids:
-    doi: https://qikan.cqvip.com/Qikan/Article/Detail?id%20=%207101730810
+#hugoblox:
+ # ids:
+  #  doi: https://qikan.cqvip.com/Qikan/Article/Detail?id%20=%207101730810
         
         
         
@@ -41,7 +41,7 @@ links:
   - type: pdf
     url: "paper.pdf"
   - type: source
-    url: https://qikan.cqvip.com/Qikan/Article/Detail?id%20=%207101730810        
+    url: https://qikan.cqvip.com/Qikan/Article/Detail?id=7101730810      
         
         
         

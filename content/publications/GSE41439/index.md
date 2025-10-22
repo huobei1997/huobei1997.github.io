@@ -1,26 +1,11 @@
 ---
-title: 'Multi-omics sequencing of gastroesophageal junction adenocarcinoma reveals prognosis-relevant key factors and a novel immunogenomic classification'
+title: 'Bioinformatics Analysis and Design Based on R-studio and Databases'
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - Zhao Ma
+  - Jie Zhang
   - admin
-  - Fuqiang Li
-  - Kui Wu
-  - Xianxian Wu
-  - Tian Luo
-  - Na Gao
-  - Huijuan Luo
-  - Zhilin Sui
-  - Zhentao Yu
-  - Hongjing Jiang
-  - Xiaobin Shang
-  - Chuangui Chen
-  - Jie Yue
-  - Fianbiao Meng
-  - Xiaofeng Duan
-  - Bo Xu
 date: '2025-01-30T00:00:00Z'
 
 # Publication type.
@@ -29,10 +14,10 @@ date: '2025-01-30T00:00:00Z'
 #publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Gastric Cancer*
+publication: In *Modern Information Technology*
 #publication_short: In *ICW*
 
-abstract: We found 30 mutated driver genes, 7 novel genomic signatures, 3 copy-number variations, and 2 V-J gene usages related to prognosis that were not identified in previous study. A high frequency of COSMIC-SBS-384-1 and De novo-SV-32-A was associated with more neoantigen generation and a better survival. Using 19 molecular features, we identified three immune-related subtypes (immune inflamed, intermediate, and deserted) with discrete profiles of genomic signatures, immune status, and clinical outcome. The immune deserted subtype (27.2%) was characterized by an earlier KRAS mutation, worse immune reaction, and prognosis than the other two subtypes. The immune inflamed subtypes exhibited the highest levels of neoantigens, TCR/pMHC-binding strength, CD8 + T-cell infiltration, IFN-α/γ response pathways, and survival rate.
+abstract: The gene chip data set with access number GSE41439 in NCBI gene expression profile database is selected as the analysis object. Firstly，the differential expression genes are screened by R-studio and the clustering heat map is drawn，then the differential genes are uploaded to DAVID database for GO function and KEGG pathway enrichment analysis，and then the protein interaction network is constructed by using STRING database，and can be seen by using Cytoscape software to observe the relationship between protein and protein directly. Four key genes，PIK3R1，GNAS，GNAL and GNG4，were screened out by protein interaction network，which can be further discussed. This method is suitable for the research of many kinds of gene chips，and has good generalization. It can be applied to the disease-related gene chips，which can provide some help for medical diagnosis and precise treatment.
 
 # Summary. An optional shortened abstract.
 #summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
@@ -45,7 +30,7 @@ featured: true
 # Standard identifiers for auto-linking
 hugoblox:
   ids:
-    doi: 10.1007/s10120-025-01585-y
+    doi: https://qikan.cqvip.com/Qikan/Article/Detail?id%20=%207101730810
         
         
         
@@ -56,8 +41,7 @@ links:
   - type: pdf
     url: "paper.pdf"
   - type: source
-    url: https://link.springer.com/article/10.1007/s10120-025-01585-y
-        
+    url: https://qikan.cqvip.com/Qikan/Article/Detail?id%20=%207101730810        
         
         
         

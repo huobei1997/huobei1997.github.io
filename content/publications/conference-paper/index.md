@@ -35,8 +35,7 @@ date: '2025-01-30T00:00:00Z'
 publication: In *Gastric Cancer*
 #publication_short: In *ICW*
 
-abstract: |
-
+abstract: 
 **Background** Gastroesophageal junction adenocarcinoma (GEJAC) exhibits distinct molecular characteristics due to its unique anatomical location. We sought to investigate effective and reliable molecular classification of GEJAC to guide personalized treatment.
 
 **Methods** We analyzed the whole genomic, transcriptomic, T-cell receptor repertoires, and immunohistochemical data in 92 GEJAC patients and delineated the landscape of genetic and immune alterations. In addition to COSMIC nomenclature, the de novo nomenclature was also utilized to define signatures and investigate their correlation with survival. A novel molecular subtype was developed and validated in other cohorts.

@@ -1,27 +1,19 @@
 ---
-title: 'Multi-omics sequencing of gastroesophageal junction adenocarcinoma reveals prognosis-relevant key factors and a novel immunogenomic classification'
+title: 'An interferon-stimulated long non-coding RNA USP30-AS1 as an immune modulator in influenza A virus infection'
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - Zhao Ma
+  - Yi Cao
+  - Alex W H Chin
+  - Haogao Gu
   - admin
-  - Fuqiang Li
-  - Kui Wu
-  - Xianxian Wu
-  - Tian Luo
-  - Na Gao
-  - Huijuan Luo
-  - Zhilin Sui
-  - Zhentao Yu
-  - Hongjing Jiang
-  - Xiaobin Shang
-  - Chuangui Chen
-  - Jie Yue
-  - Fianbiao Meng
-  - Xiaofeng Duan
-  - Bo Xu
-date: '2025-01-30T00:00:00Z'
+  - Yuner Gu
+  - Sylvia P N Lau
+  - Kenrie P Y Hui
+  - Michael C W Chan
+  - Leo L M Poon
+date: '2025-01-08T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -29,10 +21,10 @@ date: '2025-01-30T00:00:00Z'
 #publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Gastric Cancer*
+publication: In *PLoS Pathog*
 #publication_short: In *ICW*
 
-abstract: We found 30 mutated driver genes, 7 novel genomic signatures, 3 copy-number variations, and 2 V-J gene usages related to prognosis that were not identified in previous study. A high frequency of COSMIC-SBS-384-1 and De novo-SV-32-A was associated with more neoantigen generation and a better survival. Using 19 molecular features, we identified three immune-related subtypes (immune inflamed, intermediate, and deserted) with discrete profiles of genomic signatures, immune status, and clinical outcome. The immune deserted subtype (27.2%) was characterized by an earlier KRAS mutation, worse immune reaction, and prognosis than the other two subtypes. The immune inflamed subtypes exhibited the highest levels of neoantigens, TCR/pMHC-binding strength, CD8 + T-cell infiltration, IFN-α/γ response pathways, and survival rate.
+abstract: Long non-coding RNAs (lncRNAs) are essential components of innate immunity, maintaining the functionality of immune systems that control virus infection. However, how lncRNAs engage immune responses during influenza A virus (IAV) infection remains unclear. Here, we show that lncRNA USP30-AS1 is up-regulated by infection of multiple different IAV subtypes and is required for tuning inflammatory and antiviral response in IAV infection. Genetically inactivation of USP30-AS1 enhances viral protein synthesis and viral growth. USP30-AS1 is an interferon-stimulated gene, and the induction of USP30-AS1 can be achieved by JAK-STAT mediated signaling activation. The immune regulation of USP30-AS1 is independent of its proximal protein-coding gene USP30. In IAV infection, deletion of USP30-AS1 unleashes high systemic inflammatory responses involving a broad range of pro-inflammatory factors, suggesting USP30-AS1 as a critical modulator of immune responses in IAV infection. Furthermore, we established a database providing well-annotated host gene expression profiles IAV infection or immune stimulation.
 
 # Summary. An optional shortened abstract.
 #summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
@@ -45,7 +37,7 @@ featured: true
 # Standard identifiers for auto-linking
 hugoblox:
   ids:
-    doi: 10.1007/s10120-025-01585-y
+    doi: 10.1371/journal.ppat.1012854
         
         
         
@@ -56,7 +48,7 @@ links:
   - type: pdf
     url: "paper.pdf"
   - type: source
-    url: https://link.springer.com/article/10.1007/s10120-025-01585-y
+    url: https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1012854
         
         
         

@@ -32,7 +32,7 @@ date: '2025-01-30T00:00:00Z'
 publication: In *Gastric Cancer*
 #publication_short: In *ICW*
 
-abstract: We found 30 mutated driver genes, 7 novel genomic signatures, 
+abstract: We found 30 mutated driver genes, 7 novel genomic signatures, 3 copy-number variations, and 2 V-J gene usages related to prognosis that were not identified in previous study. A high frequency of COSMIC-SBS-384-1 and De novo-SV-32-A was associated with more neoantigen generation and a better survival. Using 19 molecular features, we identified three immune-related subtypes (immune inflamed, intermediate, and deserted) with discrete profiles of genomic signatures, immune status, and clinical outcome. The immune deserted subtype (27.2%) was characterized by an earlier KRAS mutation, worse immune reaction, and prognosis than the other two subtypes. The immune inflamed subtypes exhibited the highest levels of neoantigens, TCR/pMHC-binding strength, CD8 + T-cell infiltration, IFN-α/γ response pathways, and survival rate.
 
 # Summary. An optional shortened abstract.
 #summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.

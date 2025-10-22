@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Mengting LI
+title: Mengting Li
 
 # Name pronunciation (optional)
 name_pronunciation: ''
@@ -79,7 +79,7 @@ education:
 
 ---
 
-My name is **Mengting LI (李梦婷)**, and I am a Bioinformatics PhD student at the School of Public Health, The University of Hong Kong (HKU), supervised by **Prof. Leo Poon**.
+My name is **Mengting Li (李梦婷)**, and I am a Bioinformatics PhD student at the School of Public Health, The University of Hong Kong (HKU), supervised by **Prof. Leo Poon**.
 
 My research involves analyzing viral genomic data to understand viral evolution, transmission dynamics, and virus-host interactions. Through my work, I aim to provide novel insights into **virology**.
 

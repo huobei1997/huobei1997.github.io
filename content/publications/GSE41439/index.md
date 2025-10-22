@@ -6,7 +6,7 @@ title: 'Bioinformatics Analysis and Design Based on R-studio and Databases'
 authors:
   - Jie Zhang
   - admin
-date: '2025-01-30T00:00:00Z'
+date: '2020-02-25T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).

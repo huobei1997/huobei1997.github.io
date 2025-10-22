@@ -56,14 +56,22 @@ hugoblox:
   ids:
     doi: 10.1007/s10120-025-01585-y
         
+        
+        
+        
+        
           
 
 # Custom links
 links:
   - type: pdf
-    url: "paper.pdf"
+    url: ""
   - type: source
     url: https://link.springer.com/article/10.1007/s10120-025-01585-y
+        
+        
+        
+        
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.

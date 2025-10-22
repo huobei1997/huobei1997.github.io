@@ -7,7 +7,7 @@ name_pronunciation: ''
 
 # Full name (for SEO)
 first_name: Mengting
-last_name: LI
+last_name: Li
 
 # Pronouns (optional)
 pronouns: she/her

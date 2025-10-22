@@ -1,7 +1,5 @@
 ---
-
 title: 'Multi-omics sequencing of gastroesophageal junction adenocarcinoma reveals prognosis-relevant key factors and a novel immunogenomic classification'
-
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
@@ -23,7 +21,6 @@ authors:
   - Fianbiao Meng
   - Xiaofeng Duan
   - Bo Xu
-
 date: '2025-01-30T00:00:00Z'
 
 # Publication type.

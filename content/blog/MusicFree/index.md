@@ -6,6 +6,7 @@ date: 2025-11-20
 # Featured image
 image:
   caption: 'Screenshot: MusicFree Interface'
+  preview_only: true
 
 authors:
   - admin
@@ -82,6 +83,8 @@ After opening the software, you need to import plugins to be able to search for 
 ## 4. Usage Experience
 
 After configuration is complete, click the **Search** icon on the left to aggregate search for network-wide music.
+
+![MusicFree Interface](featured.png)
 
 **Main Feature Recommendations:**
 * **Import Playlist**: Supports directly pasting NetEase or QQ Music playlist links to sync your favorites.

@@ -74,8 +74,8 @@ After opening the software, you need to import plugins to be able to search for 
 > [!TIP]+ Recommended Plugin Source
 > This is an aggregation source with relatively complete collection:
 >
-> https://raw.gitcode.com/maotoumao/MusicFreePlugins/raw/
-> master/plugins.json
+> `https://raw.gitcode.com/maotoumao/MusicFreePlugins/raw/`
+> `master/plugins.json`
 > 
 > *Note: If the link above is invalid, you can Google search for other plugin sources yourself.*
 

@@ -1,6 +1,6 @@
 ---
-title: "🎧 Unlocking Music in HK: A Setup Guide for MusicFree on macOS"
-summary: A comprehensive guide on using the open-source tool MusicFree to aggregate music resources. Covers installation on Apple Silicon and fixing the "App Damaged" Gatekeeper error.
+title: "🎧 A Setup Guide for MusicFree on macOS"
+summary: A comprehensive guide on using the open-source tool MusicFree to aggregate music resources.
 date: 2025-11-20
 
 # Featured image

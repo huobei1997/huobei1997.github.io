@@ -5,7 +5,7 @@ date: 2025-11-20
 
 # Featured image
 image:
-  caption: 'Screenshot: MusicFree Interface'
+  caption: 'MusicFree Interface'
   preview_only: true
 
 authors:

@@ -23,13 +23,35 @@ This guide outlines a standardized, reproducible pipeline for RNA-seq data analy
 ### 1. Environment & Directory Structure
 
 **Software Prerequisites:**
-It is highly recommended to use `conda` or `mamba` for version management to ensure reproducibility.
+To ensure reproducibility and avoid dependency conflicts, it is highly recommended to use **Conda** (or the faster **Mamba**) for environment management.
+
 * **fastp**: An ultra-fast all-in-one FASTQ preprocessor (QC + Trimming).
 * **STAR**: Spliced Transcripts Alignment to a Reference (Industry standard aligner).
 * **subread**: A package containing `featureCounts` for efficient quantification.
 * **samtools**: The swiss-army knife for BAM/SAM file manipulation.
 
-**Directory Initialization:**
+**Step 1: Setup Conda Environment:**
+Run the following commands to create a dedicated environment and install all necessary tools from the `bioconda` channel.
+
+```bash
+# 1. Create a new environment named 'rnaseq'
+conda create -n rnaseq python=3.9 -y
+
+# 2. Activate the environment
+conda activate rnaseq
+
+# 3. Install software (Using mamba is recommended for speed, but conda works too)
+# We explicitly specify channels to ensure correct versions
+conda install -y -c bioconda -c conda-forge fastp star subread samtools
+
+# 4. Verify installation
+fastp --version
+STAR --version
+featureCounts -v
+samtools --version
+```
+
+**Step 2: Directory Initialization:**
 A clean folder structure is the foundation of reproducible research. Run the following commands in your project root to initialize the workspace:
 
 ```bash

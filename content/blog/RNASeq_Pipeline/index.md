@@ -35,14 +35,14 @@ Run the following commands to create a dedicated environment and install all nec
 
 ```bash
 # 1. Create a new environment named 'rnaseq'
-conda create -n rnaseq python=3.9 -y
+conda create -n rnaseq
 
 # 2. Activate the environment
 conda activate rnaseq
 
 # 3. Install software (Using mamba is recommended for speed, but conda works too)
 # We explicitly specify channels to ensure correct versions
-conda install -y -c bioconda -c conda-forge fastp star subread samtools
+conda install -c bioconda -c conda-forge fastp star subread samtools
 
 # 4. Verify installation
 fastp --version

@@ -332,13 +332,17 @@ Translating gene lists into biological insights using `clusterProfiler`.
 ```R
 library(clusterProfiler)
 library(org.Hs.eg.db)
+library(biomaRt)
 
 # Convert IDs: Ensembl -> Entrez
-# clusterProfiler requires Entrez IDs for accurate mapping
 gene_list <- rownames(sig_genes)
 gene_list <- gsub("\\..*", "", gene_list)
 
-entrez_ids <- bitr(gene_list, fromType="ENSEMBL", toType="ENTREZID", OrgDb="org.Hs.eg.db")
+mart <- useMart("ensembl", dataset = "hsapiens_gene_ensembl")
+ids_biomart <- getBM(attributes = c("ensembl_gene_id", "entrezgene_id", "hgnc_symbol"),
+                     filters = "ensembl_gene_id",
+                     values = gene_list, 
+                     mart = mart)
 
 # 1. GO Enrichment (Biological Process)
 ego <- enrichGO(gene = entrez_ids$ENTREZID,

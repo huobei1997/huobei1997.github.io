@@ -1,13 +1,12 @@
 ---
 title: "RNA-Seq Analysis Pipeline: From Raw Data to Functional Enrichment"
-summary: A comprehensive RNA-Seq analysis workflow covering upstream processing (Linux: QC, STAR, featureCounts) and downstream analysis (R: DESeq2, Visualization, GO/KEGG).
+summary: "A comprehensive RNA-Seq analysis workflow covering upstream processing (Linux: QC, STAR, featureCounts) and downstream analysis (R: DESeq2, Visualization, GO/KEGG)."
 date: 2025-11-21
 authors:
   - admin
 tags:
   - RNA-Seq
-  - Bioinformatics
-  - R
+  
 image:
   caption: 'RNA-Seq Analysis Pipeline'
   preview_only: true

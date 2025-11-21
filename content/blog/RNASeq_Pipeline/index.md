@@ -211,6 +211,7 @@ library(tidyverse)
 # 1. Load Data
 counts_data <- read.table("counts.txt", header=TRUE, row.names=1, sep="\t")
 colnames(counts_data) <- gsub("\\.\\.\\.03\\.Align\\.|_Aligned\\.sortedByCoord\\.out\\.bam", "", colnames(counts_data))
+counts_data<-counts_data[,6:ncol(counts_data)]
 
 col_data <- read.table("metadata.txt", header=TRUE, row.names=1, sep="\t")
 

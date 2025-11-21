@@ -181,7 +181,7 @@ featureCounts -T 16 \
               -p \
               -t exon \
               -g gene_id \
-              -a ../02.Genome/gencode.v44.annotation.gtf \
+              -a ../02.Genome/gencode.v49.annotation.gtf \
               -o all_counts.txt \
               ../03.Align/*.bam
 ```

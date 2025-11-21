@@ -96,6 +96,7 @@ STAR --runMode genomeGenerate \
      --sjdbGTFfile gencode.v49.annotation.gtf \
      --sjdbOverhang 149
 ```
+![star_index](star_index.jpg)
 
 > **📝 Parameter Explanation:**
 > * `--runMode genomeGenerate`: Switches STAR to index-building mode (default is alignment mode).
@@ -119,7 +120,6 @@ STAR --runMode genomeGenerate \
 > * **Common Values:**
 >     * If output is **150** (Standard Illumina PE150) $\rightarrow$ set overhang to **149**.
 >     * If output is **100** (Illumina PE100) $\rightarrow$ set overhang to **99**.
-![star_index](star_index.jpg)
 
 ### 4. QC & Trimming
 

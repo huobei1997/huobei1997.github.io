@@ -14,8 +14,6 @@ authors:
 tags:
   - Music
   
-content_meta:
-  trending: true
 ---
 
 Friends working overseas likely have a major pain point in their daily work: **music copyright restrictions**. The habitually used NetEase Cloud and QQ Music have most playlists turned grey due to regional restrictions.

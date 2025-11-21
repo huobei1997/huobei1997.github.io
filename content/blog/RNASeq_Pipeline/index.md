@@ -71,7 +71,7 @@ STAR --runMode genomeGenerate \
      --runThreadN 16 \
      --genomeDir ./star_index \
      --genomeFastaFiles GRCh38.primary_assembly.genome.fa \
-     --sjdbGTFfile gencode.v44.annotation.gtf \
+     --sjdbGTFfile gencode.v49.annotation.gtf \
      --sjdbOverhang 149
 ```
 

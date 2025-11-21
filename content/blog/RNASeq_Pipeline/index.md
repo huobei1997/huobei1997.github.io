@@ -82,6 +82,22 @@ STAR --runMode genomeGenerate \
 > * `--sjdbGTFfile`: Providing the GTF file here improves alignment accuracy specifically across splice junctions.
 > * `--sjdbOverhang 149`: **Critical Parameter**. Ideally set to `ReadLength - 1`. For standard Illumina PE150 (150bp) sequencing, use 149. If you have PE100 data, set this to 99.
 
+> **❓ How to determine the correct `sjdbOverhang`?**
+>
+> The general formula is: **`Read Length - 1`**.
+>
+> If you are unsure about your sequencing read length (e.g., PE150 vs PE100), use one of the following methods:
+>
+> * **Method A (Check Report):** Open the `fastp.html` report generated in Step 4 (run fastp first if needed). Look at the **"Summary"** table -> **"Read1 before filtering"** -> **"mean length"**.
+> * **Method B (Command Line):** Run this command to directly count the length of the first read in your raw data:
+>     ```bash
+>     # Print the length of the first sequence line
+>     zcat ../00.RawData/Sample1_1.fq.gz | head -n 2 | tail -n 1 | awk '{print length}'
+>     ```
+> * **Common Values:**
+>     * If output is **150** (Standard Illumina PE150) $\rightarrow$ set overhang to **149**.
+>     * If output is **100** (Illumina PE100) $\rightarrow$ set overhang to **99**.
+
 ### 4. QC & Trimming
 
 We use `fastp` because it performs quality control and adapter trimming in a single pass, making it significantly faster than combining FastQC and Trimmomatic.

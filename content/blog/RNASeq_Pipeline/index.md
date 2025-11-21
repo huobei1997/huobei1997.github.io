@@ -336,6 +336,8 @@ library(org.Hs.eg.db)
 # Convert IDs: Ensembl -> Entrez
 # clusterProfiler requires Entrez IDs for accurate mapping
 gene_list <- rownames(sig_genes)
+gene_list <- gsub("\\..*", "", gene_list)
+
 entrez_ids <- bitr(gene_list, fromType="ENSEMBL", toType="ENTREZID", OrgDb="org.Hs.eg.db")
 
 # 1. GO Enrichment (Biological Process)

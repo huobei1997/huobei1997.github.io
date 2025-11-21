@@ -19,8 +19,6 @@ tags:
 
 This guide outlines a standard pipeline for RNA-seq data analysis, covering everything from upstream raw data processing in Linux to downstream statistical analysis and visualization in R.
 
-It specifically includes advanced tips for handling **viral infection samples** (e.g., Influenza), addressing the unique challenges of host-pathogen co-transcriptomics.
-
 ## Part 1: Upstream Analysis (Linux Environment)
 
 ### 1. Environment & Directory Structure

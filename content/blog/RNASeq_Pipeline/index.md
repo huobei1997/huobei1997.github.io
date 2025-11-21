@@ -119,6 +119,7 @@ STAR --runMode genomeGenerate \
 > * **Common Values:**
 >     * If output is **150** (Standard Illumina PE150) $\rightarrow$ set overhang to **149**.
 >     * If output is **100** (Illumina PE100) $\rightarrow$ set overhang to **99**.
+![star_index](star_index.jpg)
 
 ### 4. QC & Trimming
 

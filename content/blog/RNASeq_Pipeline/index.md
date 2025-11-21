@@ -270,7 +270,7 @@ res <- results(dds, contrast=c("Condition", "Infected", "Mock"))
 resLFC <- lfcShrink(dds, contrast=c("Condition", "Infected", "Mock"), type="normal")
 
 # Convert to Dataframe for filtering
-res_df <- as.data.frame(res)
+res_df <- as.data.frame(resLFC)
 
 # Filter Significant Genes
 # Common threshold: Adjusted P-value < 0.05 and Fold Change > 2 (|log2FC| > 1)

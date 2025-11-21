@@ -52,10 +52,10 @@ You need to download the reference genome (**FASTA**) and the gene annotation fi
 cd 02.Genome
 
 # Download hg38 (GRCh38) genome sequence
-wget https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_44/GRCh38.primary_assembly.genome.fa.gz
+wget https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_49/GRCh38.primary_assembly.genome.fa.gz
 
 # Download corresponding annotation
-wget https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_44/gencode.v44.annotation.gtf.gz
+wget https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_49/gencode.v49.annotation.gtf.gz
 
 # Decompress files (STAR requires uncompressed FASTA usually)
 gunzip *.gz

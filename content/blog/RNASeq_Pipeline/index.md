@@ -351,10 +351,13 @@ ego <- enrichGO(gene = ids_biomart$entrezgene_id,
                 pAdjustMethod = "BH",
                 pvalueCutoff = 0.05)
 dotplot(ego, showCategory=20, title="GO Biological Process Enrichment")
+![GO](GO.png)
 
 # 2. KEGG Pathway Enrichment
 kk <- enrichKEGG(gene = ids_biomart$entrezgene_id,
                  organism = 'hsa', # 'hsa' for Homo sapiens
                  pvalueCutoff = 0.05)
 dotplot(kk, showCategory=20, title="KEGG Pathway Enrichment")
+![KEGG](KEGG.png)
+
 ```

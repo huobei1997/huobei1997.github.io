@@ -345,7 +345,7 @@ ids_biomart <- getBM(attributes = c("ensembl_gene_id", "entrezgene_id", "hgnc_sy
                      mart = mart)
 
 # 1. GO Enrichment (Biological Process)
-ego <- enrichGO(gene = entrez_ids$ENTREZID,
+ego <- enrichGO(gene = ids_biomart$entrezgene_id,
                 OrgDb = org.Hs.eg.db,
                 ont = "BP",
                 pAdjustMethod = "BH",
@@ -353,8 +353,8 @@ ego <- enrichGO(gene = entrez_ids$ENTREZID,
 dotplot(ego, showCategory=20, title="GO Biological Process Enrichment")
 
 # 2. KEGG Pathway Enrichment
-kk <- enrichKEGG(gene = entrez_ids$ENTREZID,
+kk <- enrichKEGG(gene = ids_biomart$entrezgene_id,
                  organism = 'hsa', # 'hsa' for Homo sapiens
                  pvalueCutoff = 0.05)
-dotplot(kk, title="KEGG Pathway Enrichment")
+dotplot(kk, showCategory=20, title="KEGG Pathway Enrichment")
 ```

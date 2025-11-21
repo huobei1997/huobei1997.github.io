@@ -59,15 +59,6 @@ wget [https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_44/genco
 gunzip *.gz
 ```
 
-> **🧬 PhD Pro-Tip (Virology Specific)**
->
-> Since your research involves **Influenza infection**, if you intend to quantify viral gene expression (e.g., Matrix gene, NP gene) alongside the host, you **must concatenate** the viral genome FASTA and GTF with the human files.
->
-> **Command Example:**
-> `cat human.fa flu.fa > combined.fa` (Do the same for GTF)
->
-> *If you skip this, viral reads will be discarded as "Unmapped" during alignment.*
-
 ### 3. Build Index
 
 STAR requires a genome index to perform alignment. This step only needs to be done once per genome.

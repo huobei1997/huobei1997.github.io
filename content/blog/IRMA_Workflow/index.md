@@ -114,8 +114,8 @@ After the alignment was complete, I found that the **Per.Ident** was **99.91%**,
 3.  **Check the Position**:
     * **Ends of Sequence**: If the mismatch is at the very start or end, it is likely a sequencing artifact or trimming issue.
     * **Middle of Sequence**: If the mismatch is in the middle, it is likely a real biological mutation.
-4.  **Analyze Ambiguity Codes (IUPAC)**:
-    Check specific alignment rows. For instance, around **228-229 bp**:
+4.  **Analyze Mismatches**:
+    Check specific alignment rows (e.g., `Sbjct 181`). For instance, around **228-229 bp**:
     ```text
     Query (Pipeline): ...AACAAGGACARRCCCT...
     Sbjct (IRMA):     ...AACAAGGACAGGCCCT...

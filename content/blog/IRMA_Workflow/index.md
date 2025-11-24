@@ -99,8 +99,8 @@ IRMA is undeniably simple and user-friendly, but **how about its accuracy**? To 
     * Find and check the box **"Align two or more sequences"**.
     * *This splits the input interface into "Query Sequence" and "Subject Sequence" sections.*
 3.  **Upload Sequences**:
-    * **Query Sequence (Top Box)**: Upload or paste your IRMA output (`MySampleName.fasta`).
-    * **Subject Sequence (Bottom Box)**: Upload or paste the standard viral reference genome (e.g., A/California/07/2009).
+    * **Query Sequence (Top Box)**: Upload or paste the standard Pipeline ouput.
+    * **Subject Sequence (Bottom Box)**: Upload or paste your IRMA output (`MySampleName.fasta`).
 4.  **Run BLAST**: Click the "BLAST" button.
 
 ### Step 3: Interpreting Mismatches & AA Changes

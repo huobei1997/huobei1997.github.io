@@ -115,13 +115,13 @@ After the alignment was complete, I found that the **Per.Ident** was **99.91%**,
     * **Ends of Sequence**: If the mismatch is at the very start or end, it is likely a sequencing artifact or trimming issue.
     * **Middle of Sequence**: If the mismatch is in the middle, it is likely a real biological mutation.
 4.  **Analyze Ambiguity Codes (IUPAC)**:
-    Check specific alignment rows (e.g., `Sbjct 181`). For instance, around **228-229 bp**:
+    Check specific alignment rows. For instance, around **228-229 bp**:
     ```text
-    Query (Your Seq): ...AACAAGGACAGGCCCT...
-    Sbjct (Reference): ...AACAAGGACARRCCCT...
+    Query (Pipeline): ...AACAAGGACARRCCCT...
+    Sbjct (IRMA):     ...AACAAGGACAGGCCCT...
     ```
-    Notice that the reference uses **RR**. In bioinformatics (IUPAC nomenclature), **R** stands for **Purine (A or G)**.
-    * **Interpretation**: Biologically speaking, we can consider the IRMA result reliable here. It has successfully resolved the ambiguity (determining them as `G`), whereas our own pipelines might differ in how they call these specific positions.
+    Notice that the IRMA result (Query) uses **RR**, while my custom pipeline (Sbjct) uses **GG**. In bioinformatics (IUPAC nomenclature), **R** stands for **Purine (A or G)**.
+    * **Interpretation**: Biologically speaking, the IRMA result is **reliable** here. It likely detected a mixed population (quasispecies) and conservatively preserved the ambiguity, whereas my custom pipeline was more aggressive in determining the specific base as **G**.
       
 ![Alignments](Alignments.jpg)
 

@@ -105,7 +105,7 @@ IRMA is undeniably simple and user-friendly, but **how about its accuracy**? To 
 
 ### Step 3: Interpreting Mismatches & AA Changes
 
-Once the results load, you usually see ~1-2 base differences. To determine if these lead to **Amino Acid (AA) changes** (Non-synonymous mutations) or are just artifacts, follow these steps:
+After the alignment was complete, I found that the **Per.Ident** was **99.91%**, indicating that there were some mismatched bases. To compare further, we need to follow these steps:
 
 1.  **Switch to Alignments**: Click the **"Alignments"** tab (located next to the *Graphic Summary*).
 2.  **Scan for Breaks**: Scroll down to see the base-by-base alignment. Look for breaks in the vertical lines (`|`):

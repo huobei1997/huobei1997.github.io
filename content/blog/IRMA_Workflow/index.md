@@ -107,9 +107,20 @@ IRMA is aggressive in assembly, so we must verify if the generated consensus has
     * **Subject Sequence (Bottom Box)**: Upload or paste the standard viral reference genome (e.g., A/California/07/2009).
 4.  **Run BLAST**: Click the "BLAST" button.
 
-> [!TIP]+ What to look for?
-> * **Dot Matrix View**: Look for a clean diagonal line. Breaks indicate large indels or misassemblies.
-> * **Alignment Ends**: Check if the start/end of your query matches the subject. IRMA sometimes extends contigs into low-quality terminal regions; if the BLAST alignment stops before the end of your sequence, trim the ends.
+### Step 3: Interpreting Mismatches & AA Changes
+
+Once the results load, you usually see ~1-2 base differences. To determine if these lead to **Amino Acid (AA) changes** (Non-synonymous mutations) or are just artifacts, follow these steps:
+
+1.  **Switch to Alignments**: Click the **"Alignments"** tab (located next to the *Graphic Summary*).
+2.  **Scan for Breaks**: Scroll down to see the base-by-base alignment. Look for breaks in the vertical lines (`|`):
+    * **Line Present (`|`)**: The bases are identical.
+    * **No Line / Gap**: This indicates a mismatch or indel.
+3.  **Check the Position**:
+    * **Ends of Sequence**: If the mismatch is at the very start or end, it is likely a sequencing artifact or trimming issue.
+    * **Middle of Sequence**: If the mismatch is in the middle, it is likely a real biological mutation.
+
+> [!TIP]+ Analysis Goal
+> If the mismatch is in the **middle**, map this coordinate to the gene's reading frame to see if the codon changes (e.g., `GCA` -> `GCC` is synonymous, but `GCA` -> `GTA` changes Alanine to Valine).
 
 ## 4. Benchmark: IRMA vs. My Custom Pipeline
 

@@ -18,6 +18,8 @@ This guide outlines a standardized, reproducible pipeline for RNA-seq data analy
 
 ---
 
+{{< toc mobile_only=true is_open=true >}}
+
 ## Part 1: Upstream Analysis (Linux Environment) 🐧
 
 ### 1. Environment & Directory Structure

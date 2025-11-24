@@ -120,7 +120,7 @@ After the alignment was complete, I found that the **Per.Ident** was **99.91%**,
     Query (Pipeline): ...AACAAGGACAGGCCCT...
     Sbjct (IRMA):     ...AACAAGGACARRCCCT...
     ```
-    Notice that the IRMA result (Query) uses **RR**, while my custom pipeline (Sbjct) uses **GG**. In bioinformatics (IUPAC nomenclature), **R** stands for **Purine (A or G)**.
+    Notice that the IRMA result (Sbjct) uses **RR**, while my custom pipeline (Query) uses **GG**. In bioinformatics (IUPAC nomenclature), **R** stands for **Purine (A or G)**.
     * **Interpretation**: Biologically speaking, the IRMA result is **reliable** here. It likely detected a mixed population (quasispecies) and conservatively preserved the ambiguity, whereas my custom pipeline was more aggressive in determining the specific base as **G**.
       
 ![Alignments](Alignments.jpg)

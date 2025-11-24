@@ -99,7 +99,7 @@ IRMA is undeniably simple and user-friendly, but **how about its accuracy**? To 
     * Find and check the box **"Align two or more sequences"**.
     * *This splits the input interface into "Query Sequence" and "Subject Sequence" sections.*
 3.  **Upload Sequences**:
-    * **Query Sequence (Top Box)**: Upload or paste the standard Pipeline ouput.
+    * **Query Sequence (Top Box)**: Upload or paste the consensus sequence from your custom pipeline.
     * **Subject Sequence (Bottom Box)**: Upload or paste your IRMA output (`MySampleName.fasta`).
 4.  **Run BLAST**: Click the "BLAST" button.
 

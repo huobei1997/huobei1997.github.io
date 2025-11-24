@@ -120,6 +120,7 @@ Once the results load, you usually see ~1-2 base differences. To determine if th
     * **Middle of Sequence**: If the mismatch is in the middle, it is likely a real biological mutation.
 
 > [!Note]+ Analysis Goal
+> 
 > If the mismatch is in the **middle**, map this coordinate to the gene's reading frame to see if the codon changes (e.g., `GCA` -> `GCC` is synonymous, but `GCA` -> `GTA` changes Alanine to Valine).
 
 ## 4. Benchmark: IRMA vs. My Custom Pipeline

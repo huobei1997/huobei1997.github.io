@@ -123,7 +123,7 @@ After the alignment was complete, I found that the **Per.Ident** was **99.91%**,
     Notice that the reference uses **RR**. In bioinformatics (IUPAC nomenclature), **R** stands for **Purine (A or G)**.
     * **Interpretation**: Biologically speaking, we can consider the IRMA result reliable here. It has successfully resolved the ambiguity (determining them as `G`), whereas our own pipelines might differ in how they call these specific positions.
       
-![GO](GO.png)
+![Alignments](Alignments.jpg)
 
 > [!TIP]+ Analysis Goal
 > 

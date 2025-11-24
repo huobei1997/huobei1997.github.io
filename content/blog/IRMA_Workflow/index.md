@@ -92,7 +92,7 @@ IRMA FLU Sample1_R1.fastq.gz Sample1_R2.fastq.gz Sample1
 ```
 
 Once finished, the key output file will be located at:
-`./Sample1/amended_consensus/Sample1_*.fasta`
+`./Sample1/amended_consensus/Sample1_*.fa`
 
 ### Step 2: Validate with NCBI BLAST (Two Sequences)
 

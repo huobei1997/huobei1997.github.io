@@ -1,6 +1,6 @@
 ---
 title: "🧬 Robust assembly, variant calling, and phasing of highly variable RNA viruses."
-summary: Documenting the workflow for using IRMA to handle highly variable RNA virus assembly, integrating NCBI BLAST validation, and benchmarking against custom-built pipelines.
+summary: Documenting the analysis workflow and using NCBI BLAST to compare the results with my custom-developed pipeline.
 date: 2025-11-24
 
 # Featured image

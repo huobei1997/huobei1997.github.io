@@ -16,19 +16,15 @@ tags:
   
 ---
 
-Researchers working with RNA viruses (like Influenza or SARS-CoV-2) face a major pain point in their daily work: **handling high variability and quasispecies**. Standard assemblers often fail to capture the diversity or produce chimeric contigs when faced with mixed infections or intra-host evolution.
+Researchers working with RNA viruses often face a major dilemma: **how to select the right reference genome**? On top of that, traditional analysis pipelines are often **overly complex and cumbersome**, making them extremely difficult for researchers without a strong bioinformatics background to use.
 
-After attempting various manual scripts, I finally locked onto the **IRMA (Iterative Refinement Meta-Assembler)** pipeline. It is designed specifically for robust assembly, variant calling, and phasing of highly variable viruses. This blog post records the complete workflow—from installation to NCBI BLAST verification—and compares it with my own custom pipeline.
+After attempting various complex manual scripts, I finally locked onto the **IRMA (Iterative Refinement Meta-Assembler)** pipeline. It stands out because it is **simple, fast, and accurate**. It automates the tedious reference selection process, making it a friendly tool for everyone. This blog post records the complete workflow—from installation to NCBI BLAST verification—and compares it with my own custom pipeline.
 
 {{< toc mobile_only=true is_open=true >}}
 
 ## 1. What is IRMA?
 
-IRMA is essentially a **comprehensive assembly toolkit** designed for "messy" viral data.
-
-* **Iterative Refinement**: It doesn't just map once. It maps, builds a consensus, and re-maps iteratively to capture divergent reads.
-* **Robust**: Capable of handling low-quality data or samples with significant mutations (indels).
-* **Phasing Capabilities**: It can separate distinct haplotypes (e.g., co-infection of two Influenza strains).
+IRMA was designed for the robust assembly, variant calling, and phasing of highly variable RNA viruses. Currently IRMA is deployed with modules for influenza, ebolavirus and coronavirus. IRMA is free to use and parallelizes computations for both cluster computing and single computer multi-core setups.
 
 ## 2. Download & Installation (via Conda)
 

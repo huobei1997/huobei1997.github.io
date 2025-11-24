@@ -73,7 +73,7 @@ We need to configure the Conda channel priority correctly. Please operate accord
 
 ## 3. The Workflow: Assembly & Validation
 
-This section outlines the complete process of running the assembly and immediately verifying the results using NCBI's web tools to ensure the "Iterative Refinement" hasn't introduced artifacts.
+This section outlines the complete process of running the assembly and immediately verifying the results using NCBI's web tools to validate the results.
 
 ### Step 1: Run the Assembly
 To assemble an Influenza sample (using the built-in `FLU` module):

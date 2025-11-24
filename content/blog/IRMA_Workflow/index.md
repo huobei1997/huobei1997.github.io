@@ -119,25 +119,10 @@ Once the results load, you usually see ~1-2 base differences. To determine if th
 > 
 > If the mismatch is in the **middle**, map this coordinate to the gene's reading frame to see if the codon changes (e.g., `GCA` -> `GCC` is synonymous, but `GCA` -> `GTA` changes Alanine to Valine).
 
-## 4. Benchmark: IRMA vs. My Custom Pipeline
+## 4. Conclusion
 
-I previously wrote a custom pipeline (Fastp -> BWA -> Samtools -> iVar) to handle this data. Here is a comparison of the results:
+If you just want to simply check for sequence variations, I believe this software is sufficient because it is simple and fast.
 
-| Feature | IRMA (The Specialist) | My Custom Pipeline (The Generalist) |
-| :--- | :--- | :--- |
-| **Speed** | Slower (Iterative mapping takes time) | **Faster** (Single pass mapping) |
-| **Indel Detection** | **Excellent** (Dynamic reference editing) | Poor (Often misaligns large gaps) |
-| **Phasing** | **Native Support** (Separates co-infections) | Difficult (Requires external tools) |
-| **Usage** | One command | Complex shell script |
-
-### Case Study: The "Drifting" Gene
-In a recent dataset, my custom pipeline failed to assemble the **Hemagglutinin (HA)** gene because the sample had a 15bp deletion compared to the reference. BWA clipped the reads, leading to low coverage holes.
-
-**IRMA, however, succeeded.**
-Because of its iterative nature, it "learned" the deletion in the first few cycles and updated the internal reference, allowing the reads to map perfectly in the final cycle.
-
-### Conclusion
-
-If you need speed for simple re-sequencing, a standard pipeline is fine. But for **high-variability RNA viruses**, **cross-species transmission**, or **co-infection analysis**, IRMA combined with careful BLAST validation is the robust choice that saves you from manual debugging.
+However, if you are dealing with an **unknown RNA virus**, I think you should perform a BLAST search first to select the appropriate module, or adopt a step-by-step analysis using software specifically suitable for your sequences.
 
 Happy Assembling! 🧪

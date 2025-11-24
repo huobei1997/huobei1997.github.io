@@ -18,7 +18,7 @@ tags:
 
 Researchers working with RNA viruses often face a major dilemma: **how to select the right reference genome**? On top of that, traditional analysis pipelines are often **overly complex and cumbersome**, making them extremely difficult for researchers without a strong bioinformatics background to use.
 
-After attempting various complex manual scripts, I finally locked onto the **IRMA (Iterative Refinement Meta-Assembler)** pipeline. It stands out because it is **simple, fast, and accurate**. It automates the tedious reference selection process, making it a friendly tool for everyone. This blog post records the complete workflow—from installation to NCBI BLAST verification—and compares it with my own custom pipeline.
+After attempting various complex manual scripts, I finally locked onto the **IRMA (Iterative Refinement Meta-Assembler)** pipeline. It stands out because it is **simple, fast, and accurate**. It automates the tedious reference selection process, making it a friendly tool for everyone.
 
 {{< toc mobile_only=true is_open=true >}}
 

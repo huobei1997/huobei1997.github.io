@@ -87,12 +87,12 @@ To assemble an Influenza sample (using the built-in `FLU` module):
 conda activate irma_env
 
 # 2. Run assembly
-# Syntax: irma <MODULE> <SAMPLE_NAME> <READ1> <READ2>
-irma FLU MySampleName /path/to/raw_reads_R1.fastq.gz /path/to/raw_reads_R2.fastq.gz
+# Syntax: IRMA <MODULE-config> <R1.fastq.gz/R1.fastq> <R2.fastq.gz/R2.fastq> [path/to]<sample_name> [options]
+IRMA FLU Sample1_R1.fastq.gz Sample1_R2.fastq.gz Sample1
 ```
 
 Once finished, the key output file will be located at:
-`./MySampleName/amended_consensus/MySampleName.fasta`
+`./Sample1/amended_consensus/Sample1_*.fasta`
 
 ### Step 2: Validate with NCBI BLAST (Two Sequences)
 

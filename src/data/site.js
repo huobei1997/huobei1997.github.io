@@ -9,7 +9,7 @@ export const site = {
   links: [
     { label: 'GitHub', url: 'https://github.com/huobei1997' },
     { label: 'LinkedIn', url: 'https://www.linkedin.com/in/huobei/' },
-    { label: 'Google Scholar', url: 'https://scholar.google.com/citations?user=limengting' },
+    { label: 'Google Scholar', url: 'https://scholar.google.com/citations?user=EhG9lPkAAAAJ' },
   ],
   education: [
     { degree: 'PhD, Bioinformatics', school: 'The University of Hong Kong', when: 'Oct 2025 – present' },

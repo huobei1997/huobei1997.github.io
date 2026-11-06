@@ -1,0 +1,30 @@
+---
+const { posts } = Astro.props;
+const fmt = (d) => ({
+  y: d.getUTCFullYear(),
+  md: d.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', timeZone: 'UTC' }),
+});
+---
+<ul class="posts">
+  {posts.map((p) => {
+    const d = fmt(p.data.date);
+    return (
+      <li class="post">
+        <span class="date">{d.y}<br />{d.md}</span>
+        <div class="post-b">
+          <h2 class="post-t"><a href={`/blog/${p.id}/`}>{p.data.title}</a></h2>
+          <p class="summary">{p.data.summary}</p>
+          <div class="meta">
+            {p.data.tags.map((t) => <span>{t}</span>)}
+            {p.data.minutes && <span>{p.data.minutes} min</span>}
+          </div>
+        </div>
+        {p.data.cover && (
+          <a class="thumb" href={`/blog/${p.id}/`} aria-hidden="true" tabindex="-1">
+            <img src={p.data.cover} alt="" loading="lazy" width="320" height="240" />
+          </a>
+        )}
+      </li>
+    );
+  })}
+</ul>

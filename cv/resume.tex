@@ -1,0 +1,147 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Mengting Li — Curriculum Vitae
+% Built with Awesome-CV (https://github.com/posquit0/Awesome-CV), class file in this folder.
+% Compile with:  xelatex resume.tex  (twice, for the "N of M" page footer)
+
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\fontdir[fonts/]
+
+\colorlet{awesome}{awesome-red}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\usepackage{enumitem}
+
+%-------------------------------------------------------------------------------
+%  PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+\name{Mengting}{Li}
+\position{PhD Student in Bioinformatics}
+\address{Room 3-08, The Hong Kong Jockey Club Building For Interdisciplinary Research, 5 Sassoon Rd, Sandy Bay, Hong Kong}
+\pronouns{she/her}
+\mobile{+852 5968 9107}
+\email{mtlee1001@connect.hku.hk}
+\homepage{limengting1001.com}
+\github{huobei1997}
+\linkedin{huobei}
+
+\newcommand*{\monthyeartoday}{\ifcase\month\or January\or February\or March\or April\or May\or June\or July\or August\or September\or October\or November\or December\fi\ \number\year}
+
+\Urlmuskip=0mu plus 1mu\relax
+\def\UrlBreaks{\do\/\do-\do.\do:\do\_}
+
+\begin{document}
+
+\makecvheader
+\makecvfooter{\monthyeartoday}{Mengting Li~~~·~~~Curriculum Vitae}{\thepage~of~\pageref{acvlastpage}}
+
+%-------------------------------------------------------------------------------
+%  EDUCATION
+%-------------------------------------------------------------------------------
+\cvsection{Education}
+
+\begin{cventries}
+  \cventry{PhD in Bioinformatics}{The University of Hong Kong (HKU)}{Hong Kong, China}{Oct 2025 - Present}{}
+  \cventry{Master of Biological and Pharmaceutical Engineering}{University of Chinese Academy of Sciences (UCAS)}{Beijing, China}{Sep 2020 - Jun 2023}{}
+  \cventry{Bachelor of Bioinformatics}{Xuzhou Medical University (XZMU)}{Xuzhou, China}{Sep 2016 - Jun 2020}{}
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+%  RESEARCH EXPERIENCE
+%-------------------------------------------------------------------------------
+\cvsection{Research Experience}
+
+\begin{cvparagraph}
+\textbf{Research Assistant (Jul 2023 - Sep 2025)}\\
+\textbf{The University of Hong Kong | Hong Kong, China (Supervisor: Prof. Leo Poon)}\\
+\textbf{Project: An interferon-stimulated long non-coding RNA USP30-AS1 as an immune modulator in influenza A virus infection}
+\vspace{4.5mm}
+\begin{cvitems}
+  \item Developed a reproducible bioinformatics pipeline that successfully processed and analyzed 5 RNA-seq datasets and 4 microarray datasets from public repositories (SRA, GEO).
+  \item Identified 1,715 differentially expressed lncRNAs across multiple post-infection time points by implementing a custom differential expression analysis workflow (using \texttt{STAR}, \texttt{featureCounts}, and \texttt{DESeq2}).
+  \item Revealed key immune pathways using \texttt{g:Profiler} for functional enrichment analysis and \texttt{EnrichmentMap} in \texttt{Cytoscape} for network visualization.
+\end{cvitems}
+
+\vspace{4mm}
+\textbf{Master's Student Researcher (Sep 2020 - Jun 2023)}\\
+\textbf{BGI-Research \& University of Chinese Academy of Sciences | Shenzhen, China (Supervisor: Prof. Kui Wu)}\\
+\textbf{Project: Multi-omics sequencing of gastroesophageal junction adenocarcinoma reveals prognosis-relevant key factors and a novel immunogenomic classification}
+\vspace{4.5mm}
+\begin{cvitems}
+  \item Led a multi-omics analysis of 92 gastroesophageal junction adenocarcinoma (GEJAC) patients, integrating whole-genomic, transcriptomic, and T-cell receptor repertoires data.
+  \item Developed a comprehensive bioinformatics pipeline for processing WGS data to perform somatic variant calling and driver gene identification. Further utilized these results for downstream analyses including mutational signature analysis (\texttt{SigProfilerExtraction}), neoantigen prediction (\texttt{NetMHC}, \texttt{NetMHCpan}), and tumor evolution (\texttt{PhylogicNDT}).
+  \item Discovered 30 mutated driver genes, 7 novel genomic signatures, 3 copy-number variations, and 2 V-J gene usages previously unidentified and linked to prognosis.
+  \item Developed a novel immunogenomic classification system that stratifies patients into three immune-related subtypes (immune-inflamed, intermediate, and deserted) with discrete profiles of genomic signatures, immune status, and clinical outcomes.
+\end{cvitems}
+\end{cvparagraph}
+
+%-------------------------------------------------------------------------------
+%  SKILLS
+%-------------------------------------------------------------------------------
+\cvsection{Skills}
+
+\begin{cvparagraph}
+\textbf{Programming \& Scripting Languages}
+\vspace{4.5mm}
+\begin{cvitems}
+  \item \textbf{R}: (Proficient) Data manipulation (\texttt{Tidyverse}, \texttt{data.table}), statistical modeling, bioinformatics (\texttt{Bioconductor}), visualization (\texttt{ggplot2}).
+  \item \textbf{Python}: (Proficient) Scientific computing (\texttt{Pandas}, \texttt{NumPy}), machine learning (\texttt{PyTorch}, \texttt{Scikit-learn}), scripting and workflow integration.
+  \item \textbf{Bash/Shell Scripting}: Proficient in automating tasks, managing data, and working in a Linux/HPC environment.
+\end{cvitems}
+
+\vspace{4mm}
+\textbf{Bioinformatics \& Genomics}
+\vspace{4.5mm}
+\begin{cvitems}
+  \item \textbf{Omics Analysis \& Pipeline Development}: Proficient in building and deploying automated analysis pipelines for diverse genomic data modalities, including Whole Genome Sequencing (WGS), Bulk RNA-seq, single-cell RNA-seq (scRNA-seq), and Spatial Transcriptomics.
+  \item \textbf{Phylogenetics \& Evolutionary Analysis}: Experience in Bayesian phylogenetic inference (\texttt{BEAST}), maximum likelihood methods (e.g., \texttt{IQ-TREE}), and population genetics simulation (\texttt{SLiM}).
+  \item \textbf{Sequence Analysis}: Viral lineage assignment (\texttt{Pangolin}), sequence alignment (\texttt{BWA}, \texttt{Bowtie2}), variant calling \& manipulation (\texttt{VCFtools}, \texttt{BCFtools}), and general sequence analysis (\texttt{Samtools}, \texttt{BLAST}).
+  \item \textbf{Genomic Data Formats}: Deep familiarity with standard formats including VCF, BAM/SAM, FASTQ, FASTA, and GFF/GTF.
+\end{cvitems}
+
+\vspace{4mm}
+\textbf{Developer Tools \& Workflow Management}
+\vspace{4.5mm}
+\begin{cvitems}
+  \item \textbf{Version Control}: \texttt{Git} / \texttt{GitHub} for collaborative and reproducible research.
+  \item \textbf{Environment Management}: \texttt{Conda} for managing software dependencies and creating reproducible environments.
+  \item \textbf{High-Performance Computing (HPC)}: Experience with job scheduling systems (e.g., \texttt{Slurm}, \texttt{SGE}) and working in a cluster environment.
+  \item \textbf{Workflow Languages}: Familiarity with the principles of workflow management using \texttt{Snakemake} / \texttt{Nextflow}.
+\end{cvitems}
+
+\vspace{4mm}
+\textbf{Deep Learning}
+\vspace{4.5mm}
+\begin{cvitems}
+  \item \textbf{Machine Learning Foundations}: Strong foundation in Regression, Classification, Clustering, DNNs, and CNNs.
+  \item \textbf{Advanced Sequence Models}: Understanding of advanced architectures including RNNs, LSTMs, and Transformers.
+  \item \textbf{Technical Implementation}: Hands-on project experience applying \texttt{Scikit-learn}, \texttt{PyTorch}, and \texttt{TensorFlow} to bioinformatics tasks.
+\end{cvitems}
+\end{cvparagraph}
+
+%-------------------------------------------------------------------------------
+%  PUBLICATIONS  (newest first — same order as limengting1001.com)
+%-------------------------------------------------------------------------------
+\cvsection{Publications}
+
+\begin{cvparagraph}
+\begin{enumerate}[leftmargin=1.1cm, labelsep=0.5cm, align=left, itemsep=1.6mm, topsep=0pt, label=\arabic*.]
+  \item Gu, H., Li, J., Sun, W., \textbf{Li, M.}, Leung, K., Wu, J. T., Yuan, H.-Y., Wang, M. H., Yang, B., McKay, M. R., Ning, N., \& Poon, L. L. M. (2026). Optimizing global genomic surveillance for early detection of emerging SARS-CoV-2 variants. \textit{Nature Communications}, 17, 4322. \url{https://doi.org/10.1038/s41467-026-70664-0}
+
+  \item Gu, H., \textbf{Li, M.}, Wang, R., Lee, L. K., Tam, W. Y., Ho, A. Y. M., Yau, M. C. Y., Yip, K. T., Wong, R. C. W., Wong, B. K. C., Luk, K. S., Lam, J. Y. W., Que, T. L., Chow, V. C. Y., Chau, S. K. Y., Duchene, S., Siu, G. K. H., \& Poon, L. L. M. (2026). Genomic epidemiology of hospital-associated SARS-CoV-2 clusters in Hong Kong during a period of relaxed visitation (May--August 2022). \textit{Influenza and Other Respiratory Viruses}, 20(3), e70249. \url{https://doi.org/10.1111/irv.70249}
+
+  \item Cao, Y., Chin, A. W. H., Gu, H., \textbf{Li, M.}, \& Poon, L. L. M. (2025). Long non-coding RNA BCAR4 is required for efficient influenza A virus replication. \textit{bioRxiv} [Preprint]. \url{https://doi.org/10.1101/2025.02.06.636885}
+
+  \item Ma, Z., \textbf{Li, M.}, Li, F., Wu, K., Wu, X., Luo, T., Gao, N., Luo, H., Sui, Z., Yu, Z., Jiang, H., Shang, X., Chen, C., Yue, J., Meng, F., Duan, X., \& Xu, B. (2025). Multi-omics sequencing of gastroesophageal junction adenocarcinoma reveals prognosis-relevant key factors and a novel immunogenomic classification. \textit{Gastric Cancer}, 28(3), 344--357. \url{https://doi.org/10.1007/s10120-025-01585-y}
+
+  \item Cao, Y., Chin, A. W. H., Gu, H., \textbf{Li, M.}, Gu, Y., Lau, S. P. N., Hui, K. P. Y., Chan, M. C. W., \& Poon, L. L. M. (2025). An interferon-stimulated long non-coding RNA USP30-AS1 as an immune modulator in influenza A virus infection. \textit{PLOS Pathogens}, 21(1), e1012854. \url{https://doi.org/10.1371/journal.ppat.1012854}
+
+  \item Zhang, J., \& \textbf{Li, M.} (2020). Bioinformatics analysis and design based on RStudio and databases. \textit{Modern Information Technology}, 4(4), 76--79. \url{https://qikan.cqvip.com/Qikan/Article/Detail?id=7101730810}
+\end{enumerate}
+\end{cvparagraph}
+
+\label{acvlastpage}
+\end{document}

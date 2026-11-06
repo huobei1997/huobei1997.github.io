@@ -1,0 +1,16 @@
+---
+import Base from '../../layouts/Base.astro';
+import PostList from '../../components/PostList.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog')).sort((a, b) => b.data.date - a.data.date);
+---
+<Base title="Blog — Mengting Li" description="Analysis workflows, research notes and technical tutorials by Mengting Li.">
+  <section class="hero">
+    <h1 class="name" style="font-size:clamp(1.9rem,6vw,2.4rem)">Blog</h1>
+    <p class="lede">Analysis workflows I have settled on, notes from reading, and the occasional thing that has nothing to do with work.</p>
+  </section>
+  <section>
+    <PostList posts={posts} />
+  </section>
+</Base>

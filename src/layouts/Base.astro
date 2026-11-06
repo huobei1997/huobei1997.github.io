@@ -1,0 +1,81 @@
+---
+import '../styles/global.css';
+import { site } from '../data/site.js';
+
+interface Props { title: string; description?: string; }
+const { title, description = `${site.name} — ${site.role}, ${site.affiliation}.` } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const year = new Date().getFullYear();
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    />
+    <script is:inline>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t;
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <header class="bar">
+      <div class="bar-in">
+        <a class="sig" href="/">{site.name}</a>
+        <nav>
+          <a href="/#bio">Bio</a>
+          <a href="/#publications">Publications</a>
+          <a href="/blog/">Blog</a>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch colour theme">Dark</button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <slot />
+      <footer>
+        <span>© {year} {site.name}</span>
+        <span><a href="https://creativecommons.org/licenses/by-nc-nd/4.0">CC BY-NC-ND 4.0</a></span>
+      </footer>
+    </main>
+
+    <script is:inline>
+      (function () {
+        var btn = document.getElementById('theme-toggle');
+        if (!btn) return;
+        var mq = window.matchMedia('(prefers-color-scheme: dark)');
+        function current() {
+          return document.documentElement.dataset.theme || (mq.matches ? 'dark' : 'light');
+        }
+        function paint() {
+          btn.textContent = current() === 'dark' ? 'Light' : 'Dark';
+        }
+        btn.addEventListener('click', function () {
+          var next = current() === 'dark' ? 'light' : 'dark';
+          document.documentElement.dataset.theme = next;
+          try { localStorage.setItem('theme', next); } catch (e) {}
+          paint();
+        });
+        mq.addEventListener('change', paint);
+        paint();
+      })();
+    </script>
+  </body>
+</html>

@@ -53,8 +53,8 @@ All in `src/data/site.js`.
 Source in `cv/` (LaTeX, Awesome-CV). Rebuild and publish:
 
 ```bash
-cd cv && xelatex resume.tex && xelatex resume.tex   # twice, for the "n of m" footer
-cp resume.pdf ../public/uploads/resume.pdf
+cd cv && xelatex mengting-li-cv.tex && xelatex mengting-li-cv.tex   # twice, for the "n of m" footer
+cp mengting-li-cv.pdf ../public/uploads/Mengting-Li-CV.pdf
 ```
 
 `cv/awesome-cv.cls` and `cv/fontawesome.sty` are local copies, patched to add a pronouns field,

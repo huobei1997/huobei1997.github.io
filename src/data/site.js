@@ -5,7 +5,7 @@ export const site = {
   affiliation: 'School of Public Health · The University of Hong Kong',
   affiliationUrl: 'https://www.hku.hk/',
   email: 'mtlee1001@connect.hku.hk',
-  cv: '/uploads/resume.pdf',
+  cv: '/uploads/Mengting-Li-CV.pdf',
   links: [
     { label: 'GitHub', url: 'https://github.com/huobei1997' },
     { label: 'LinkedIn', url: 'https://www.linkedin.com/in/huobei/' },

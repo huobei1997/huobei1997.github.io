@@ -37,7 +37,7 @@ const latest = posts.slice(0, 8);
     </div>
 
     <div class="contact">
-      <span class="mail"><span>{site.email}</span><button class="copy" id="copy-mail" type="button">Copy</button></span>
+      <a class="chip" href={`mailto:${site.email}`}>{site.email}</a>
       {site.links.map((l) => <a class="chip" href={l.url}>{l.label}</a>)}
       <a class="chip" href={site.cv}>CV (PDF)</a>
     </div>
@@ -98,29 +98,4 @@ const latest = posts.slice(0, 8);
     {posts.length > latest.length && <a class="more" href="/blog/">All {posts.length} posts →</a>}
   </section>
 
-  <script is:inline>
-    (function () {
-      var btn = document.getElementById('copy-mail');
-      if (!btn) return;
-      var el = btn.previousElementSibling;
-      function select() {
-        try {
-          var r = document.createRange();
-          r.selectNodeContents(el);
-          var s = getSelection();
-          s.removeAllRanges();
-          s.addRange(r);
-          btn.textContent = 'Select + ⌘C';
-          setTimeout(function () { btn.textContent = 'Copy'; }, 2400);
-        } catch (e) {}
-      }
-      btn.addEventListener('click', function () {
-        var done = function () {
-          btn.textContent = 'Copied';
-          setTimeout(function () { btn.textContent = 'Copy'; }, 1600);
-        };
-        try { navigator.clipboard.writeText(el.textContent.trim()).then(done, select); } catch (e) { select(); }
-      });
-    })();
-  </script>
 </Base>

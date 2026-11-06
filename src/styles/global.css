@@ -83,10 +83,6 @@ section:first-of-type{border-top:none}
 .contact{display:flex;flex-wrap:wrap;gap:.5rem .6rem;align-items:center;font-family:var(--font-mono);font-size:.76rem}
 .chip{border:1px solid var(--rule);border-radius:2px;padding:.3rem .6rem;color:var(--ink-2);display:inline-flex;gap:.45rem;align-items:center}
 a.chip:hover{border-color:var(--ink);color:var(--ink)}
-.mail{display:inline-flex;align-items:center;gap:.5rem;border:1px solid var(--rule);border-radius:2px;padding:.3rem .3rem .3rem .6rem;color:var(--ink-2)}
-.mail span{user-select:all}
-.copy{font:inherit;font-family:var(--font-mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;background:var(--paper-2);color:var(--ink-2);border:none;border-radius:2px;padding:.22rem .5rem;cursor:pointer}
-.copy:hover{color:var(--ink)}
 
 /* ---------- publications ---------- */
 .pubs{display:flex;flex-direction:column;list-style:none;padding:0;margin:0}

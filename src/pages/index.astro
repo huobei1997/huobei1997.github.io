@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import PostList from '../components/PostList.astro';
+import Icon from '../components/Icon.astro';
 import { site } from '../data/site.js';
 import { publications, ME } from '../data/publications.js';
 import { getCollection } from 'astro:content';
@@ -37,9 +38,9 @@ const latest = posts.slice(0, 8);
     </div>
 
     <div class="contact">
-      <a class="chip" href={`mailto:${site.email}`}>{site.email}</a>
-      {site.links.map((l) => <a class="chip" href={l.url}>{l.label}</a>)}
-      <a class="chip" href={site.cv}>CV (PDF)</a>
+      <a class="chip" href={`mailto:${site.email}`}><Icon name="mail" />{site.email}</a>
+      {site.links.map((l) => <a class="chip" href={l.url}><Icon name={l.icon} />{l.label}</a>)}
+      <a class="chip" href={site.cv}><Icon name="cv" />CV (PDF)</a>
     </div>
   </section>
 

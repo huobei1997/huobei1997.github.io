@@ -83,6 +83,8 @@ section:first-of-type{border-top:none}
 .contact{display:flex;flex-wrap:wrap;gap:.5rem .6rem;align-items:center;font-family:var(--font-mono);font-size:.76rem}
 .chip{border:1px solid var(--rule);border-radius:2px;padding:.3rem .6rem;color:var(--ink-2);display:inline-flex;gap:.45rem;align-items:center}
 a.chip:hover{border-color:var(--ink);color:var(--ink)}
+.chip .icon{width:.95em;height:.95em;flex:none;display:block;opacity:.85}
+a.chip:hover .icon{opacity:1}
 
 /* ---------- publications ---------- */
 .pubs{display:flex;flex-direction:column;list-style:none;padding:0;margin:0}

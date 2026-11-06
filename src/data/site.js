@@ -7,9 +7,9 @@ export const site = {
   email: 'mtlee1001@connect.hku.hk',
   cv: '/uploads/Mengting-Li-CV.pdf',
   links: [
-    { label: 'GitHub', url: 'https://github.com/huobei1997' },
-    { label: 'LinkedIn', url: 'https://www.linkedin.com/in/huobei/' },
-    { label: 'Google Scholar', url: 'https://scholar.google.com/citations?user=EhG9lPkAAAAJ' },
+    { label: 'GitHub', icon: 'github', url: 'https://github.com/huobei1997' },
+    { label: 'LinkedIn', icon: 'linkedin', url: 'https://www.linkedin.com/in/huobei/' },
+    { label: 'Google Scholar', icon: 'scholar', url: 'https://scholar.google.com/citations?user=EhG9lPkAAAAJ' },
   ],
   education: [
     { degree: 'PhD, Bioinformatics', school: 'The University of Hong Kong', when: 'Oct 2025 – present' },

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://limengting1001.com/sitemap-index.xml
